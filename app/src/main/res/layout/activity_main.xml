@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C2C2C"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_main"
+        android:padding="0dp">
+
+        <!-- Header azul estilo ventana -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_header"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ingredientes &amp; Mermas"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/circle_white"
+                    android:layout_marginStart="8dp"/>
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/circle_gray"
+                    android:layout_marginStart="8dp"/>
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/circle_red"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Contenido principal -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="32dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🥑"
+                    android:textSize="36sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ingredientes &amp; Mermas"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#1A1A1A"
+                    android:fontFamily="monospace"
+                    android:layout_marginStart="12dp"/>
+            </LinearLayout>
+
+            <!-- HOLA MUNDO -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¡HOLA MUNDO!"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#7B2D8E"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:padding="20dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/bg_input"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre del ingrediente (ej. Aguacate)"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#1A1A1A"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="(ej. Aguacate)"
+                android:background="@drawable/bg_input"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="24dp"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Costo total de compra ($)"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#1A1A1A"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="Costo total de compra ($)"
+                android:background="@drawable/bg_input"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="24dp"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Peso Bruto (con cáscara/empaque)"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#1A1A1A"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="Peso Bruto (con cáscara/empaque)"
+                android:background="@drawable/bg_input"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="24dp"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Peso Neto (solo lo utilizable)"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#1A1A1A"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="Peso Neto (solo lo utilizable)"
+                android:background="@drawable/bg_input"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:fontFamily="monospace"
+                android:layout_marginBottom="32dp"
+                android:inputType="numberDecimal"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="Calcular Rendimiento"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:fontFamily="monospace"
+                android:background="@drawable/bg_button"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
